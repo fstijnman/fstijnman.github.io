@@ -4,9 +4,12 @@ body {
     color: #38686A;
 }
 
-#navbar {
-    width: 70%;
+#part-1 {
+    width: 800px;
     margin: auto;
+}
+
+#navbar {
     padding: 20px;
     font-size: 20px;
 }
@@ -19,7 +22,7 @@ body {
 #logo {
     float: left;
     letter-spacing: 0.75px;
-    text-shadow: 1px 1px #A3B4A2;
+    text-shadow: 1px 1px #2589bd;
 }
 
 #navmenu {
@@ -39,8 +42,31 @@ body {
     border-radius: 5px;
 }
 
-#content {
-    margin-top: 20px;
+#intro-content {
+    margin-top: 30px;
     padding: 40px 20px 10px 20px;
     text-align: center;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #intro-text {
+        margin-right: 30px;
+        width: 400px;
+    }
+    
+    #intro-text a {
+        text-decoration: none;
+    }
+    
+    #intro-picture img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+}
+
+#part-2 {
+    width: 800px;
+    margin: auto;
 }
