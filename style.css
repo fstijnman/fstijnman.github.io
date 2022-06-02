@@ -5,7 +5,7 @@ body {
 }
 
 #part-1 {
-    width: 800px;
+    width: 1000px;
     margin: auto;
 }
 
@@ -57,7 +57,7 @@ body {
     }
     
     #intro-text a {
-        text-decoration: none;
+        color: #38686A;
     }
     
     #intro-picture img {
@@ -67,6 +67,15 @@ body {
 }
 
 #part-2 {
-    width: 800px;
+    width: 1000px;
     margin: auto;
+}
+
+#contact-buttons img {
+    width: 20px;
+    height: 20px;
+}
+
+#contact-buttons a:not(:last-child) {
+    margin-right: 5px;
 }
