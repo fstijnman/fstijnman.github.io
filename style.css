@@ -71,6 +71,11 @@ body {
     margin: auto;
 }
 
+#part-3 {
+    width: 1000px;
+    margin: auto;
+}
+
 #contact-buttons img {
     width: 20px;
     height: 20px;
