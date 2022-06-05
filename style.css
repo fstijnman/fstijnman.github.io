@@ -84,3 +84,16 @@ body {
 #contact-buttons a:not(:last-child) {
     margin-right: 5px;
 }
+
+#project-content {
+    display:flex;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+#project-content > div {
+    border-style: solid;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px #2589bd;
+}
