@@ -4,7 +4,7 @@ body {
     color: #38686A;
 }
 
-#part-1 {
+body > div {
     width: 1000px;
     margin: auto;
 }
@@ -27,6 +27,10 @@ body {
 
 #navmenu {
     float: right;
+}
+
+#navbar {
+    overflow: hidden;
 }
 
 #navbar a {
@@ -66,16 +70,6 @@ body {
         border-radius: 50%;
 }
 
-#part-2 {
-    width: 1000px;
-    margin: auto;
-}
-
-#part-3 {
-    width: 1000px;
-    margin: auto;
-}
-
 #contact-buttons img {
     width: 20px;
     height: 20px;
@@ -89,11 +83,22 @@ body {
     display:flex;
     flex-wrap: wrap;
     width: 1000px;
+    margin-bottom: 30px;
 }
 
 #project-content > div {
     border-style: solid;
+    border-width: 3px;
     padding: 20px;
     margin: 10px;
     box-shadow: 2px 2px #2589bd;
+}
+
+#project-content > div:hover {
+    border-width: 4px;
+    cursor: pointer;
+}
+
+#part-3 {
+    height: 500px;
 }
