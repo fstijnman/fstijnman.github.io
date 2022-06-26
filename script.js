@@ -18,9 +18,7 @@ function loopOver(data) {
         newDiv.appendChild(newContent);
         const currentDiv = document.getElementById("project-content");
         currentDiv.appendChild(newDiv);
-
     }
-    
 }
 
 $(document).ready(function() {

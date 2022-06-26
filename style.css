@@ -5,7 +5,7 @@ body {
 }
 
 body > div {
-    width: 1000px;
+    width: 100%;
     margin: auto;
 }
 
@@ -82,7 +82,7 @@ body > div {
 #project-content {
     display:flex;
     flex-wrap: wrap;
-    width: 1000px;
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -99,6 +99,11 @@ body > div {
     cursor: pointer;
 }
 
-#part-3 {
-    height: 500px;
+label {
+    display:block;
+}
+
+#form-el {
+    padding: 5px;
+    margin: 10px;
 }

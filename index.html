@@ -20,6 +20,7 @@
             </div>
             <div id="navmenu">
                 <a href="#project-content">Projects</a>
+                <a href="#blog">Blog</a>
                 <a href="#about-me">About</a>
             </div>
         </div>
@@ -51,16 +52,53 @@
     </div>
 
     <div id="part-3">
+        <h1>Blog</h1>
+        <div id="retainable-rss-embed" 
+        data-rss="https://medium.com/feed/@folkloren"
+        data-maxcols="2" 
+        data-layout="grid" 
+        data-poststyle="inline" 
+        data-readmore="Read more" 
+        data-buttonclass="btn btn-primary" 
+        data-offset="-100"></div>
+    </div>
+
+    <div id="part-4">
         <h1>About me</h1>
         <div id="about-me">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eaque mollitia at reiciendis nihil, temporibus numquam vel perspiciatis! Ullam cumque quasi blanditiis recusandae expedita atque? Eius voluptatum doloribus architecto iusto.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur hic odit animi, quasi fugiat accusantium! Doloribus minima ex, non cum voluptas dolore aperiam sapiente labore maxime ipsam esse voluptate illo.</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, perferendis temporibus dolorem non suscipit rerum porro aliquid! Facilis ab impedit, repellendus inventore eaque, delectus rem libero modi provident alias enim!</p>
         </div>
-        
     </div>
+    
+    <div id="part-5">
+        <h1>Contact</h1>
+        <p>If you want us to contact you, feel free to leave your information below.</p>
+        <form action="contact.php" method="post"></form>
+        <div id="form-el">
+            <label for="name">Your Name:</label>
+            <input type="text" name="visitor_name" id="name" placeholder="Carly Rae Jepsen" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div id="form-el">
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="carly.jepsen@email.com" required>
+        </div>
+        <div id="form-el">
+            <label for="message">Write your message</label>
+            <textarea id="message" name="visitor_message" placeholder="Call me maybe" required></textarea>
+        </div>
+        <div id="form-el">
+            <button type="submit">Send Message</button>
+        </div>
+            
+        </form>
+    </div>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+
 
 </body>
 
