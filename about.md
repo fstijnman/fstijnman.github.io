@@ -1,4 +1,21 @@
 # About
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+Hi, my name is Folkert. Folkert is a weird Dutch name (with Germanic origin?) that unfortunately doesn't work well internationally.
+
+I work as a machine learning engineer that enjoys building tangible stuff that generates value.
+
+I write about:
+
+- Artificial Intelligence
+- Machine Learning
+- MLOps
+- Data engineering
+- Explainable AI
+- Business strategy of anything above
+
+Other things I enjoy:
+
+- Long distance triathlons (IM 70.3)
+- Piano
+- Factorio
 
