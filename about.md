@@ -11,7 +11,7 @@ I write about:
 - MLOps
 - Data engineering
 - Explainable AI
-- Business strategy of anything above
+- Business strategy on all of the above
 
 Other things I enjoy:
 
