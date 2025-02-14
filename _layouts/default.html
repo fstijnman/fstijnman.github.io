@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+    <header>
+        <h1><a href="/">Folkert's notes</a></h1>
+        <nav>
+            <a href="/about">About</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            {{ content }}
+        </div>
+        {% include sidebar.html %}
+    </div>
+
+    <footer>
+        <p>Folkert's notes</p>
+        <p>Personal blogging website that contains my posts</p>
+        <p><a href="mailto:folkert.data@gmail.com">folkert.data@gmail.com</a></p>
+        <p><a href="https://github.com/fstijnman">fstijnman</a></p>
+    </footer>
+</body>
+
+</html>
