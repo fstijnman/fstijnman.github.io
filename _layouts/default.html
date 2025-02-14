@@ -5,6 +5,7 @@
 
 <body>
     <div class="page-wrapper">
+        <!-- Sidebar -->
         <div class="sidebar">
             <div class="sidebar-section">
                 <h2>Categories</h2>
@@ -29,15 +30,14 @@
             </div>
         </div>
 
+        <!-- Main Content -->
         <div class="main-content">
             {%- include header.html -%}
-
             <main class="page-content" aria-label="Content">
                 <div class="wrapper">
                     {{ content }}
                 </div>
             </main>
-
             {%- include footer.html -%}
         </div>
     </div>
