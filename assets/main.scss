@@ -1,5 +1,6 @@
 --- # Only the main Sass file needs front matter (the dashes are enough) --- @import "{{ site.theme }}";
 
+// Keep all your existing styles for images, code cells, etc.
 .post img {
         display: block;
         border: 1px solid #021a40;
@@ -72,31 +73,6 @@
         width: auto;
 }
 
-.sidebar {
-        padding: 20px;
-        background: #f5f5f5;
-        border-radius: 5px;
-}
-
-.category-list {
-        list-style: none;
-        padding: 0;
-}
-
-.tag-cloud {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-}
-
-.tag {
-        background: #e0e0e0;
-        padding: 4px 8px;
-        border-radius: 3px;
-        text-decoration: none;
-        color: #333;
-}
-
 .container {
         display: grid;
         grid-template-columns: 1fr 250px;
@@ -104,10 +80,37 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
+
+        @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+        }
 }
 
-@media (max-width: 768px) {
-        .container {
-                grid-template-columns: 1fr;
+.sidebar {
+        padding: 20px;
+        background: #f5f5f5;
+        border-radius: 5px;
+
+        .category-list {
+                list-style: none;
+                padding: 0;
+        }
+
+        .tag-cloud {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+
+                .tag {
+                        background: #e0e0e0;
+                        padding: 4px 8px;
+                        border-radius: 3px;
+                        text-decoration: none;
+                        color: #333;
+
+                        &:hover {
+                                background: #d0d0d0;
+                        }
+                }
         }
 }
