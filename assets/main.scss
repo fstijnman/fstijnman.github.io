@@ -1,95 +1,24 @@
---- # Only the main Sass file needs front matter (the dashes are enough) --- @import "{{ site.theme }}";
-
-// Keep all your existing styles for images, code cells, etc.
-.post img {
-        display: block;
-        border: 1px solid #021a40;
-        vertical-align: top;
-        margin-left: auto;
-        margin-right: auto;
-}
-
-.post figcaption {
-        text-align: center;
-        font-size: .8rem;
-        font-style: italic;
-        color: light-grey;
-}
-
-.language-python {
-        border-left: 1px solid lightcoral;
-}
-
-.language-python+.language-plaintext {
-        border-left: 1px solid grey;
-        margin-left: 1rem !important;
-}
-
-.language-python+.language-plaintext code {
-        background-color: white !important;
-}
-
-.language-python+.language-plaintext pre {
-        background-color: white !important;
-}
-
-// for Jupyter Notebook HTML Code Cells from https://www.fast.ai/public/css/hyde.css
-
-.input_area pre,
-.input_area div {
-        margin-bottom: 0.1rem !important;
-        margin-top: 0.1rem !important;
-        padding-bottom: 0 !important;
-        padding-top: 0 !important;
-}
-
-.output_area pre,
-.output_area div {
-        margin-bottom: 0.1rem !important;
-        margin-top: 0.1rem !important;
-        padding-bottom: 0 !important;
-        padding-top: 0 !important;
-        background-color: white !important;
-}
-
-.input_area pre {
-        border-left: 1px solid lightcoral;
-}
-
-.output_area pre {
-        border-left: 1px solid grey;
-        margin-left: 1rem !important;
-}
-
-.codecell {
-        border-right: 2px solid lightgrey;
-        margin-bottom: 1rem !important;
-        margin-top: 1rem !important;
-        padding-bottom: 0 !important;
-        padding-top: 0 !important;
-}
-
-.codecell table {
-        width: auto;
-}
+--- --- @import "minima";
 
 .container {
         display: grid;
         grid-template-columns: 1fr 250px;
         gap: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 800px) {
                 grid-template-columns: 1fr;
         }
 }
 
 .sidebar {
         padding: 20px;
-        background: #f5f5f5;
+        background: #f8f9fa;
         border-radius: 5px;
+        border: 1px solid #e9ecef;
+
+        h2 {
+                @extend .post-list-heading;
+        }
 
         .category-list {
                 list-style: none;
@@ -100,17 +29,18 @@
                 display: flex;
                 flex-wrap: wrap;
                 gap: 8px;
+        }
 
-                .tag {
-                        background: #e0e0e0;
-                        padding: 4px 8px;
-                        border-radius: 3px;
+        .tag {
+                background: #e9ecef;
+                padding: 4px 8px;
+                border-radius: 3px;
+                text-decoration: none;
+                color: inherit;
+
+                &:hover {
+                        background: #dee2e6;
                         text-decoration: none;
-                        color: #333;
-
-                        &:hover {
-                                background: #d0d0d0;
-                        }
                 }
         }
 }

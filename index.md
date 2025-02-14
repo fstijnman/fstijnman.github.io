@@ -1,17 +1,13 @@
-
 ---
-layout: default
-title: Posts
+layout: home
 ---
-
-<h1>Posts</h1>
 
 {% for post in site.posts %}
   <article>
+    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
     <h2>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </h2>
-    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %-d, %Y" }}</time>
   </article>
 {% endfor %}
 
