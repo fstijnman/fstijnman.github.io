@@ -1,0 +1,23 @@
+<div class="sidebar">
+    <div class="sidebar-section">
+        <h2>Categories</h2>
+        {% assign categories = site.categories | sort %}
+        {% for category in categories %}
+        {% assign category_name = category[0] %}
+        <a href="{{ site.baseurl }}/categories#{{ category_name | slugify }}" class="category-link">
+            {{ category_name }} ({{ site.categories[category_name].size }})
+        </a>
+        {% endfor %}
+    </div>
+
+    <div class="sidebar-section">
+        <h2>Tags</h2>
+        {% assign tags = site.tags | sort %}
+        {% for tag in tags %}
+        {% assign tag_name = tag[0] %}
+        <a href="{{ site.baseurl }}/tags#{{ tag_name | slugify }}" class="tag-link">
+            {{ tag_name }} ({{ site.tags[tag_name].size }})
+        </a>
+        {% endfor %}
+    </div>
+</div>

@@ -4,33 +4,18 @@
 {%- include head.html -%}
 
 <body>
-    <div class="site-container">
-        <div class="sidebar">
-            <nav>
-                <h2>Categories</h2>
-                {% assign categories = site.categories | sort %}
-                {% for category in categories %}
-                {% assign category_name = category[0] %}
-                <a href="{{ site.baseurl }}/categories#{{ category_name | slugify }}">
-                    {{ category_name }} ({{ site.categories[category_name].size }})
-                </a>
-                {% endfor %}
 
-                <h2>Tags</h2>
-                {% assign tags = site.tags | sort %}
-                {% for tag in tags %}
-                {% assign tag_name = tag[0] %}
-                <a href="{{ site.baseurl }}/tags#{{ tag_name | slugify }}">
-                    {{ tag_name }} ({{ site.tags[tag_name].size }})
-                </a>
-                {% endfor %}
-            </nav>
-        </div>
+    {%- include head.html -%}
+    {%- include sidebar.html -%}
 
-        <div class="content">
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
             {{ content }}
         </div>
-    </div>
+    </main>
+
+    {%- include footer.html -%}
+
 </body>
 
 </html>
