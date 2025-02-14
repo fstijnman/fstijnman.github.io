@@ -1,11 +1,3 @@
----
-layout: post
-title: "Week ##"
-date: YYYY-mm-dd
-categories: [weekly-read]
-tags: [topic]
----
-
 # Week ## - YYYY
 
 Hey there, here's a list of things I read in the past week.
